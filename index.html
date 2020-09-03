@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/segoe-wp/styles.css">
+    <link rel="stylesheet" href="fonts/helvetica/stylesheet.css">
+    <link rel="stylesheet" href="fonts/ico-moon/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Books online</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top-line-wrapper">
+            <div class="container">
+                <div class="header-top-line">
+                    <a href="#" class="header-top-line-link">Sign in</a>
+                    <a href="#" class="header-top-line-link">My Account</a>
+                    <a href="#" class="header-top-line-link">Order Status</a>
+                    <a href="#" class="header-top-line-link">Help</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-content-wrapper">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Books online">
+                    </a>
+                    <div class="search-block">
+                        <div class="input-wrapper">
+                            <input type="text" class="input-search">
+                        </div>
+                        <button type="button" class="button-search">
+                            <span class="icon-search"></span>
+                            Search
+                        </button>
+                    </div>
+                    <div class="cart">
+                        <div class="your-cart">
+                            <a href="#" class="your-cart-title">
+                                <span class="icon-shopping-basket"></span>
+                                Your cart
+                            </a>
+                            <span class="your-cart-items">(2 items)</span>
+                        </div>
+                        <div class="cart-price-block">
+                            <p class="cart-price">$125.0</p>
+                            <button class="cart-checkout" type="button">Checkout</button>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="icon-star-o"></span>
+                        <a href="#" class="wish-list-text">Wish list</a>
+                        <span class="wish-list-count">20</span>
+                    </div>
+                    <button id="accountUser" class="account-user">
+                        <span class="icon-user-o"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <ul id="nav" class="nav-items">
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Cooking</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Medical</a></li>
+                    <li><a href="#">Reference</a></li>
+                    <li><a href="#">Science</a></li>
+                </ul>
+                <div id="closeNav" class="close-nav-wrapper">
+                    <div id="closeNavButton" class="close-nav"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="main-slider">
+                    <div class="main-slider-wrapper">
+                        <img class="slider-img" src="images/slider-1.jpg" alt="">
+                        <div class="slider-info">
+                            <h3 class="slider-title">A Wanted Man</h3>
+                            <p class="slider-number">(Jack Reacher #17)</p>
+                            <p class="slider-name">By Lee Child</p>
+                        </div>
+                    </div>
+                    <button class="icon-arrow-left slider-button slider-button-left"></button>
+                    <button class="icon-arrow-right slider-button slider-button-right"></button>
+                </div>
+                <div class="promo-block">
+                    <h3 class="promo-block-title">Deal of the Month</h3>
+                    <p class="promo-block-description">The Human Face of Big Data</p>
+                    <img class="promo-block-img" src="images/promo-block-picture-1.png" alt="">
+                    <p class="promo-block-discount">Save 45% Today</p>
+                    <p class="promo-block-price">$27.50</p>
+                    <a class="promo-block-link" href="#">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="main-content-wrapper">
+            <nav class="nav-categories">
+                <h3 class="nav-categories-title">Categories</h3>
+                <div class="categories-items">
+                    <a href="#" class="categories-all">All</a>
+                    
+                    <div class="categories-item-wrapper">
+
+                        <div class="categories-item">
+                            <h5 class="categories-item-title">Fiction & Literature</h5>
+
+                            <label class="categories-item-title visibility categories-menu-visibility" for="fiction-literature">Fiction & Literature</label>
+                            <input class="categories-item-input categories-menu-visibility" id="fiction-literature" type="checkbox">
+
+                            <ul class="categories-list">
+                                <li><a href="#">Children</a></li>
+                                <li><a href="#">Science Fiction</a></li>
+                                <li><a href="#">Fantasy</a></li>
+                                <li><a href="#">Mystery</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li><a href="#">Horror</a></li>
+                                <li><a href="#">Poetry</a></li>
+                                <li><a href="#">Literature</a></li>
+                                <li><a href="#">Crime</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="categories-item">
+                            <h5 class="categories-item-title">Non - Fiction</h5>
+
+                            <label class="categories-item-title visibility categories-menu-visibility" for="non-fiction">Non - Fiction</label>
+                            <input class="categories-item-input categories-menu-visibility" id="non-fiction" type="checkbox">
+                 
+                            <ul class="categories-list">
+                                <li><a href="#">Comic</a></li>
+                                <li><a href="#">Cook</a></li>
+                                <li><a href="#">Psychology</a></li>
+                                <li><a href="#">Medical</a></li>
+                                <li><a href="#">Art</a></li>
+                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">Law</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Computer</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="categories-item">
+                            <h5 class="categories-item-title">Other</h5>
+                            
+                            <label class="categories-item-title visibility categories-menu-visibility" for="other">Other</label>
+                            <input class="categories-item-input categories-menu-visibility" id="other" type="checkbox">
+                        
+                            <ul class="categories-list">
+                                <li><a href="#">Baby</a></li>
+                                <li><a href="#">Sex</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Science</a></li>
+                                <li><a href="#">Sports</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="tabs">
+                    <button class="tab active-tab">Best sellers</button>
+                    <button class="tab">New Arrivals</button>
+                    <button class="tab">Used Books</button>
+                    <button class="tab">Special Offers</button>
+                </div>
+                <div class="books">
+                    
+                    <!-- первые -->
+
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount have-discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-14.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Hare With
+                            Amber Eyes
+                        </h3>
+                        <p class="book-price">$50</p>
+                    </a>
+                
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-13.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The war of Art
+                        </h3>
+                        <p class="book-price">$60</p>
+                    </a>
+                
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount have-discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-15.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Hare With Amber Eyes
+                        </h3>
+                        <p class="book-price">$25</p>
+                    </a>
+
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-12.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Immortals of Meluha
+                        </h3>
+                        <p class="book-price">$80</p>
+                    </a>
+                            
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-11.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            Life Is What You Make It
+                        </h3>
+                        <p class="book-price">$200</p>
+                    </a>
+
+                    <!-- вторые -->
+
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-9.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Hare With
+                            Amber Eyes
+                        </h3>
+                        <p class="book-price">$200</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-2.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The war of Art
+                        </h3>
+                        <p class="book-price">$150</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount have-discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-10.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Hare With Amber Eyes
+                        </h3>
+                        <p class="book-price">$100</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-7.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Immortals of Meluha
+                        </h3>
+                        <p class="book-price">$150</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-6.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            Life Is What You Make It
+                        </h3>
+                        <p class="book-price">$200</p>
+                    </a>
+                    
+                    <!-- третьи -->
+
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-4.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Hare With
+                            Amber Eyes
+                        </h3>
+                        <p class="book-price">$220</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-3.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The war of Art
+                        </h3>
+                        <p class="book-price">$10</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-5.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Hare With Amber Eyes
+                        </h3>
+                        <p class="book-price">$22</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount have-discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-2.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            The Immortals of Meluha
+                        </h3>
+                        <p class="book-price">$300</p>
+                    </a>
+                    
+                    <a class="book" href="pages/book.html">
+                        <div class="book-info">
+                            <div class="discount">
+                                <p class="discount-count">30%</p>
+                                <p class="discount-text">Off</p>
+                            </div>
+                            <img class="book-img" src="images/book-11.jpg" alt="">
+                        </div>
+                        <h3 class="book-title">
+                            Life Is What You Make It
+                        </h3>
+                        <p class="book-price">$205</p>
+                    </a>
+
+                </div>
+                <ul class="paginator">
+                    <li><a class="page" href="#">1 <span></span></a></li>
+                    <li><a class="page" href="#">2 <span></span></a></li>
+                    <li><a class="page page-active" href="#">3 <span class="page-underline"></span></a></li>
+                    <li><a class="page" href="#">4 <span></span></a></li>
+                    <li><a class="page" href="#">5 <span></span></a></li>
+                    <li><a class="page" href="#">6 <span></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h5 class="footer-title">Biography & True Stories</h5>
+                        <ul class="footer-links">
+                            <li><a class="footer-link" href="#">General</a></li>
+                            <li><a class="footer-link" href="#">Diaries, Letters & Journals</a></li>
+                            <li><a class="footer-link" href="#">Memoirs</a></li>
+                            <li><a class="footer-link" href="#">True Stories</a></li>
+                            <li><a class="footer-link" href="#">Generic Exams</a></li>
+                            <li><a class="footer-link" href="#">GK Titles</a></li>
+                            <li><a class="footer-link" href="#">Medical Entrance</a></li>
+                            <li><a class="footer-link" href="#">Other Entrance Exams</a></li>
+                            <li><a class="footer-link" href="#">PG Entrance Examinations</a></li>
+                            <li><a class="footer-link" href="#">Self-help Titles</a></li>
+                            <li><a class="footer-link" href="#">Sociology</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5 class="footer-title">Professional & Reference</h5>
+                        <ul class="footer-links">
+                            <li><a class="footer-link" href="#">Academic and Reference</a></li>
+                            <li><a class="footer-link" href="#">Business Trade</a></li>
+                            <li><a class="footer-link" href="#">Engineering and Computer Science</a></li>
+                            <li><a class="footer-link" href="#">Humanities, Social Sciences and Languages</a></li>
+                            <li><a class="footer-link" href="#">Introduction to Computers</a></li>
+                            <li><a class="footer-link" href="#">Science and Maths</a></li>
+                            <li><a class="footer-link" href="#">Trade Business</a></li>
+                            <li><a class="footer-link" href="#">English Language & Literature</a></li>
+                            <li><a class="footer-link" href="#">English Language Teaching</a></li>
+                            <li><a class="footer-link" href="#">Environment Awareness</a></li>
+                            <li><a class="footer-link" href="#">Environment Protection</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5 class="footer-title">Earth Sciences</h5>
+                        <ul class="footer-links">
+                            <li><a class="footer-link" href="#">Earth Sciences</a></li>
+                            <li><a class="footer-link" href="#">Geography</a></li>
+                            <li><a class="footer-link" href="#">The Environment</a></li>
+                            <li><a class="footer-link" href="#">Regional & Area Planning</a></li>
+                            <li><a class="footer-link" href="#">Fantasy</a></li>
+                            <li><a class="footer-link" href="#">Gay</a></li>
+                            <li><a class="footer-link" href="#">Humorous</a></li>
+                            <li><a class="footer-link" href="#">Interactive</a></li>
+                            <li><a class="footer-link" href="#">Legal</a></li>
+                            <li><a class="footer-link" href="#">Lesbian</a></li>
+                            <li><a class="footer-link" href="#">Men'S Adventure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5 class="footer-title">Mathematics</h5>
+                        <ul class="footer-links">
+                            <li><a class="footer-link" href="#">Algebra</a></li>
+                            <li><a class="footer-link" href="#">Differential Equations</a></li>
+                            <li><a class="footer-link" href="#">Discrete Mathematics</a></li>
+                            <li><a class="footer-link" href="#">Fourier Analysis</a></li>
+                            <li><a class="footer-link" href="#">Numerical Analysis</a></li>
+                            <li><a class="footer-link" href="#">Probability</a></li>
+                            <li><a class="footer-link" href="#">Statistical Methods/data Analysis</a></li>
+                            <li><a class="footer-link" href="#">Stochastic And Random Processes</a></li>
+                            <li><a class="footer-link" href="#">Topology</a></li>
+                            <li><a class="footer-link" href="#">Statistics</a></li>
+                            <li><a class="footer-link" href="#">Mathematics</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <h5 class="footer-middle-title">We accept all major Credit Card/Debit Card/Internet Banking</h5>
+                <div class="footer-middle-cards">
+                    <a href="#">
+                        <img src="images/master-card.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/american-express.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/visa.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-bottom-description">
+                    Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
