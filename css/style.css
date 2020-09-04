@@ -692,7 +692,7 @@ li:last-child .footer-link {
 }
 
 .bread-crumbs-items {
-    margin: 11px 0 0 -8px;
+    margin: 11px 8px 0 -8px;
     padding: 5px 0 5px 16px;
     list-style: none;
     box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.8);
@@ -727,46 +727,328 @@ li:last-child .bread-crumbs-link::after {
     display: flex;
     border: 1px solid #dedede;
     border-radius: 5px;
+    margin: 8px 9px 0 -8px;
+    padding-bottom: 2.8%;
 }
 
-.book-element-image img {
-    width: 842px;
-    height: 391px;
+.book-element-image {
+    flex-shrink: 0;
+    margin: 3% 0 0 3%;
+    width: 250px;
+    height: 390px;
+}
+
+.book-element-info {
+    margin: 3% 0 0 4%;
 }
 
 .book-element-title {
+    position: relative;
     font-size: 40px;
     font-weight: normal;
     color: #595959;
     margin: 0;
+    background-image: url(../images/in-stock.png);
+    background-repeat: no-repeat;
+    background-position: 94.5% 16%;
 }
 
 .book-element-description {
     font-size: 16px;
     color: #7e7e7e;
-    margin: 0;
+    margin: 3% 0 0 1%;
+    line-height: 26px;
 }
 
 .our-price {
     font-size: 35px;
     color: #015699;
+    font-weight: bold;
 }
 
 .price {
     font-size: 35px;
     color: #e45858;
+    font-weight: bold;
 }
 
 .price-description {
     font-size: 17px;
+    font-weight: bold;
     color: #939292;
+    margin: 7px 0 0 3px;
+}
+
+.others-books-info {
+    margin: 12px 0 0 -15px;
+}
+
+.book-element-sell {
+    border: 1px solid #d5d2d2;
+    margin: 7% 9% 0 0;
+}
+
+.book-element-sell-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.book-element-left {
+    margin: 11px 0 0 -36px;
+}
+
+.book-element-right {
+    margin: 32px -29px 0 0;
 }
 
 .book-element-right-link {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    background: rgb(121, 178, 96);
     background: linear-gradient(0deg, rgba(121, 178, 96, 1) 0%, rgba(146, 215, 116, 1) 100%);
     text-decoration: none;
+    padding: 4px 49px 6px 33px;
+}
+
+.book-element-bottom {
+    width: 564px;
+    margin: 26px auto 9px auto;
+    border-top: 1px solid #d1d1d1;
+}
+
+.book-element-bottom span {
+    display: inline-block;
+    font-family: 'helveticaregular';
+    font-size: 13px;
+    color: #939292;
+    padding: 9px 0 0 23px;
+    background-image: url(../images/lock.png);
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+}
+
+.book-element-bottom-images {
+    margin: 5px 0 0 7px;
+}
+
+.book-element-bottom-images a {
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.others-books-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-information {
+    /* margin: 0 0 0 0; */
+}
+
+.product-information-info-tab-wrapper {
+    display: flex;
+}
+
+.product-information-info-tab {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #c2c2c2;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-decoration: none;
+    padding: 11px 22px 5px 25px;
+    margin: 0 18px -1px 0;
+    border: 1px solid transparent;
+    /* border: 1px solid green; */
+}
+
+.product-information-info-tab-active {
+    font-size: 18px;
+    background-color: #fff;
+    color: #7e7e7e;
+    border: 1px solid #d5d2d2;
+    border-bottom: 1px solid transparent;
+
+}
+
+.product-information-info {
+    font-size: 14px;
+    line-height: 26px;
+    color: #7e7e7e;
+    margin: 0;
+    padding: 17px 40px 18px 30px;
+    border: 1px solid #d5d2d2;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+}
+
+.others-books-info-left-column {
+    width: 730px;
+    margin: 0 0 0 0;
+}
+
+.others-books-info-right-info {
+    width: 250px;
+    flex-shrink: 0;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin: 3.6% 0 0 0;
+}
+
+.others-books-info-right-info .also-like-book:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.also-like {
+    font-size: 18px;
+    color: #7e7e7e;
+    margin: 12px 0 0 14px;
+}
+
+.also-like-book {
+    display: flex;
+    text-decoration: none;
+    border-bottom: 1px solid #dedede;
+    margin: 15px 0 0 0px;
+    padding: 0 0 4px 8px;
+}
+
+.also-like-book-image {
+    display: inline-block;
+    width: 65px;
+    height: 90px;
+}
+
+.also-like-book-info-title {
+    font-size: 15px;
+    color: #595959;
+    margin: 9px 0 0 7px;
+}
+
+.also-like-book-info-price {
+    font-family: 'helveticaregular';
+    font-size: 22px;
+    color: #f05356;
+    margin: 2px 0 0 6px;
+}
+
+.also-like-book-info-link {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background-color: #595959;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 7px 0 0 6px;
+    padding: 2px 10px 5px 10px;
+}
+
+.product-review-wrapper {
+    border: 1px solid #d5d2d2;
+    border-radius: 5px;
+    margin: 2% 0 0 0;
+}
+
+.product-review {
+    margin: 0 0 5% 0;
+}
+
+.product-review-title {
+    font-size: 20px;
+    background-color: #fff;
+    color: #7e7e7e;
+    margin: 14px 0 0 26px;
+}
+
+.product-review-comment {
+    display: flex;
+    margin: 17px 26px -20px 26px;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0 0 20px 0;
+}
+
+.product-review:last-child .product-review-comment {
+    border-bottom: 1px solid transparent;
+}
+
+.product-review-comment-info-user {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+}
+
+.product-review-comment-info-user-title {
+    font-size: 14px;
+    color: #a2a2a2;
+    margin: 4px 0 0 9px;
+}
+
+.product-review-comment-description {
+    font-size: 13px;
+    color: #7e7e7e;
+    margin: -7px 0 0 15px;
+    line-height: 21px;
+}
+
+.write-comment {
+    margin-top: -33px;
+}
+
+.form {
+    margin: 3.3% 0 9% 5%;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-group-name {
+    font-size: 16px;
+    color: #a2a2a2;
+    width: 80px;
+    margin: 4px 0 0 -9px;
+    text-align: right;
+}
+
+.form-group-input {
+    border: 1px solid #e2e2e2;
+    outline: none;
+    border-radius: 5px;
+    width: 79%;
+    padding: 5px;
+    margin: 0 0 12px 22px;
+}
+
+.form-group-input:focus {
+    border: 1px solid #e2e2e2;
+}
+
+.form-group-textarea {
+    border: 1px solid #e2e2e2;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    width: 79%;
+    margin: 0 0 12px 22px;
+    padding: 5px 0 0 5px;
+    height: 129px;
+}
+
+.form-group-textarea:focus {
+    border: 1px solid #e2e2e2;
+}
+
+.submit-button {
+    display: block;
+    font-family: 'helveticaregular';
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    background: linear-gradient(0deg, rgba(121, 178, 96, 1) 0%, rgba(146, 215, 116, 1) 100%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 4px 52px 0 auto;
+    padding: 8px 20px;
 }

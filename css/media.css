@@ -34,11 +34,21 @@
 
     .categories-item {
         width: 30%;
-        /* border: 1px solid red; */
     }
 
     .nav-categories {
         margin-bottom: 2%;
+    }
+
+    .bread-crumbs-items {
+        margin: 11px 0 0 0;
+    }
+    .book-element-wrapper {
+       margin: 8px 0 0 0;
+    }
+
+    .others-books-info {
+        margin-left: 0;
     }
 
 }
@@ -90,7 +100,6 @@
 
     .nav-wrapper {
         display: flex;
-        /* position: relative; */
     }
 
     .nav-items {
@@ -151,6 +160,59 @@
         margin: 0 0 8% 0;
     }
 
+    .others-books-info-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .others-books-info-left-column,
+    .others-books-info-right-info {
+        width: 100%;
+    }
+
+    .product-review-comment {
+        padding: 0 0 50px 0;
+        margin: 17px 26px 0 26px
+    }
+
+    .also-like-book-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .also-like-book {
+        border-bottom: none;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    
+    .book-element-bottom {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    
+    .book-element-sell-wrapper {
+        flex-direction: column;
+    }
+
+    .book-element-left {
+        margin: 10px 0 0 20px;
+    }
+
+    .book-element-right {
+        margin: 20px 0 0 20px;
+    }
+
+    .book-element-bottom {
+        padding: 0 0 0 15px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -178,6 +240,43 @@
 
 }
 
+@media screen and (max-width: 780px) {
+    
+    .others-books-info-right-info {
+        text-align: center;
+    }
+
+    .also-like {
+        margin: 5% 0;
+        font-size: 22px;
+    }
+
+    .also-like-book {
+        display: inline-block;
+        flex-direction: column;
+        margin: 0 0 5% 0;
+        padding: 0;
+        /* text-align: center; */
+        /* border-bottom: 1px solid red; */
+    }
+
+    .also-like-book-image {
+        width: 126px;
+        height: 178px;
+    }
+
+    .also-like-book-info-title,
+    .also-like-book-info-price,
+    .also-like-book-info-link {
+        margin: 0 0 8px 0;
+    }
+
+    .also-like-book-info-link {
+        padding: 5px 10px;
+    }
+
+}
+
 @media screen and (max-width: 750px) {
 
     .header-content {
@@ -200,6 +299,29 @@
 
     .book {
         width: 33%;
+    }
+
+    .book-element-title {
+        background-position: 100% 16%;
+    }
+
+    .book-element-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-element-image,
+    .book-element-info {
+        margin-top: 5%;
+        margin-left: 0;
+    }
+
+    .book-element-info {
+        width: 90%;
+    }
+
+    .book-element-sell {
+        margin: 5% 0 0 0;
     }
 
 }
@@ -283,6 +405,36 @@
         justify-content: center;
     }
 
+    .book-element-title {
+        background-image: none;
+    }
+
+    .book-element-description {
+        margin-left: 0;
+    }
+
+    .product-review-comment {
+        padding: 0 0 25px 0;
+    }
+
+    .write-comment {
+        margin-top: 0px;
+    }
+
+    .form {
+        margin: 3% 0 3% 0;
+        padding: 0 3% 0 3%;
+    }
+
+    .submit-button {
+        margin: 0;
+        width: 100%;
+    }
+
+    .also-like-book {
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -337,6 +489,73 @@
 
     .bread-crumbs-link {
         line-height: 25px;
+    }
+
+    .our-price,
+    .price {
+        font-size: 25px;
+    }
+
+    .book-element-right-link {
+        padding: 5px 25px;
+    }
+
+    .book-element-bottom-images a {
+        margin-right: 10px;
+    }
+
+    .book-element-bottom-images {
+        margin: 10px 0 0 7px;
+    }
+
+    .book-element-right-link {
+        font-size: 20px;
+    }
+
+    .product-review-comment {
+        display: block;
+    }
+
+    .product-review-comment-info-user {
+        float: left;
+        margin: 7px 15px 30px 0;
+    }
+
+    .product-review-comment-description {
+        margin: -7px 0 0 0;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group-name {
+        text-align: left;
+        margin: 5% 0 2% 0;
+    }
+
+    .form-group-input,
+    .form-group-textarea {
+        margin: 0;
+        width: 100%;
+    }
+
+    .submit-button,
+    .form-group-textarea {
+        margin: 0 0 5% 0;
+    }
+
+    .product-review-comment-description {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+
+    .also-like-book {
+        width: 100%;
+        border-bottom: 1px solid #e7e7e7;
     }
 
 }
